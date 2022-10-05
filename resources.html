@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet'>
+  <title>Plan My Path</title>
+  <meta charset="utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Yeseva+One' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      padding: 20px;
+      font-family: "Arvo";
+      border-radius: 0;
+      background-image: url("https://cdn.pixabay.com/photo/2016/03/09/09/14/books-1245690_960_720.jpg");
+
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-image: url("https://i.imgur.com/IGZrVK1.png");
+      background-position: 50% 0;
+      height: 530%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #68a9fd;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+    .navbar-brand {
+      background-color: #4e9afd !important;
+      color: white !important;
+      font-family: "Yeseva One" !important;
+    }
+
+    #middle {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  </style>
+</head>
+<body>
+<font face=Arvo>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-brand"><font size=5px><i><b>Plan My Path</b></i></font></div>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="home" style="background-color:rgba(0, 0, 0, 0.4);"><font color="white" size=4px>Home</font></a></li>
+        <li><a href="month" style="background-color:rgba(0, 0, 0, 0.4)";><font size=4px color="white">Planner</font></a></li>
+        <li><a href="timeline" style="background-color:rgba(0, 0, 0, 0.4)";><font size=4px color="white">Timeline</font></a></li>
+        <li><a href="news" style="background-color:rgba(0, 0, 0, 0.4)";><font size=4px color="white">News</font></a></li>
+        <li><a href="resources" style="background-color:rgba(0, 0, 0, 0.4)";><font size=4px color="white">Resources</font></a></li>
+        <li><a href="about" style="background-color:rgba(0, 0, 0, 0.4)";><font size=4px color="white">About</font></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <h2><p>5,300+</p></h2>
+        <p>Colleges in the US</p><br><br>
+        <hr>
+      <h2><p>1,800+</p></h2>
+      <p>College Majors</p><br><br>
+      <hr>
+      <h2><p>1</p></h2>
+      <p> Right Path for You </p>
+
+    </div>
+    <div class="col-sm-8 text-left">
+      <h1><center><img src="https://i.imgur.com/ULqed6B.png"><center></h1>
+      <h2><center><i>Resources</i></center></h2>
+      <hr>
+
+      <div id="middle">
+
+      <h3><b>Academic Help</b></h3><br>
+      <h4> <a target="_blank" href="https://www.khanacademy.org/">1. Khan Academy </a></h4><br> Khan Academy is a free website that has short lessons, practice questions, and a personalized learning dashboard. It is great for both reviewing old topics and self-learning new ones!
+      <br><br><h4> <a target="_blank" href="https://www.quizlet.com/">2. Quizlet</a></h4><br> Quizlet is another free website that you can use to create study sets with many different review options, including flashcards, quizzes, and short response. There are also many pre-made sets that you can choose from!
+      <br><br><h4> <a target="_blank" href="https://ed.ted.com/">3. TED Ed</a></h4><br> TED Ed has an enormous collection of educational video content, including videos on thought-provoking and uncommon topics. This website is great for deepening knowledge in specific areas.
+      <br><br><h4> <a target="_blank" href="https://stackoverflow.com/">4. Stack Overflow</a></h4><br> Stack Overflow is a help resource for computer science. It has question and answer forums and millions of already-answered questions. This resource is especially helpful for students in AP Computer Science or who are looking to pursue Computer Science in college.
+      <br><br><br>
+
+      <h3><b>Important College Websites</b></h3><br>
+      <h4> <a target="_blank" href="https://www.collegeboard.com/">1. Collegeboard</a></h4><br> Collegeboard is the website where you sign up for the SAT, SAT subject tests, and receive scores for SATs and PSATs. It also has a "scholarship search" function.
+      <br><br><h4> <a target="_blank" href="https://www.commonapp.org/">2. Common App</a></h4><br> The Common Application is the college application that is accepted by around 900 schools, both public and private, both small and large. It allows the user to apply to multiple colleges at one time.
+      <br><br><h4> <a target="_blank" href="https://ap.collegeboard.org/">3. Collegeboard AP Website</a></h4><br> The Collegeboard's AP website is where students sign up for AP classes and exams using their class's join code. Some teachers also assign progress assessments through this website.
+      <br><br><h4> <a target="_blank" href="https://studentaid.ed.gov/sa/fafsa">4. FAFSA</a></h4><br> The FAFSA is the "Free Application for Federal Student Aid". It is a form completed by current and prospective college students to determine their eligibility for student financial aid.
+
+      <h3><b>Virtual College Tours</b></h3><br>
+      <p> These are just a handful of the thousands of virtual college tours that are available on the internet.
+        They are incredibly helpful when visiting the physical campus is not an option. </p>
+
+      <br><h4> <a target="_blank" href="https://www.youtube.com/watch?v=_Nq4Z5i7lcs/">1. Stanford University</a></h4><br>
+      <h4> <a target="_blank" href="https://www.youtube.com/watch?v=YlR7lMDidEc">2. Yale University</a></h4><br>
+      <h4> <a target="_blank" href="https://www.youtube.com/watch?v=GxqR6p8r6z0/">3. New York University (NYU)</a></h4><br>
+      <h4> <a target="_blank" href="https://www.youtube.com/watch?v=F7DKDJKDdY0">4. Duke University</a></h4><br>
+      <h4> <a target="_blank" href="https://www.youtube.com/watch?v=5nJ9b0Xve7k">5. University of Southern California (USC)</a></h4><br>
+      <h4> <a target="_blank" href="https://www.youtube.com/watch?v=nFlgR9Ro650">6. Rice University</a></h4><br>
+
+        <h3><b>Focus & Productivity</b></h3><br>
+        <h4> <a target="_blank" href="https://focusme.com/">1. FocusMe</a></h4><br> FocusMe is a website that allows the user to block specific websites and apps that could become distractions during study time. 
+        <br><br><h4> <a target="_blank" href="http://hocusfoc.us/">2. Hocus Focus</a></h4><br> Hocus Focus is a utlity for MacOS that allows a user to view one window at a time, which removes tab-switching as a potential distraction. It is free and can be downloaded onto any device running MacOS.
+        <br><br><h4> <a target="_blank" href="https://www.noisli.com/">3. Brain.fm</a></h4><br> Noisli is a website that has a color mixer and study sound functionality. Lyric-free music is perfect for studying, and they have a wide variety of types. They also have a convenient chrome extension.
+
+
+      <br><br><br><br>
+      </div>
+
+    </div>
+    <div class="col-sm-2 sidenav">
+      
+    </div>
+  </div>
+</div>
+</font>
+
+<footer class="container-fluid text-center">
+  <p></p>
+</footer>
+
+</body>
+</html>

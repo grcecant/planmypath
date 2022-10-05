@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet'>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      padding: 20px;
+      font-family: "Arvo";
+      border-radius: 0;
+      background-image: url("https://cdn.pixabay.com/photo/2016/03/09/09/14/books-1245690_960_720.jpg");
+
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #cde2fe;
+      height: 150%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #68a9fd;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+    .navbar-brand {
+      background-color: #4e9afd !important;
+      color: white !important;
+
+    }
+
+
+  </style>
+</head>
+<body>
+<font face=Arvo>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-brand"><font size=4px><i><b>Plan My Path</b></i></font></div>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="testtest.html" style="background-color:rgba(0, 0, 0, 0.4);"><font color="white" size=4px>Home</font></a></li>
+        <li><a href="testtest4.html" style="background-color:rgba(0, 0, 0, 0.4)";><font size=4px color="white">Today</font></a></li>
+        <li><a href="testtest5.html" style="background-color:rgba(0, 0, 0, 0.4)";><font size=4px color="white">This Month</font></a></li>
+        <li><a href="testtest6.html" style="background-color:rgba(0, 0, 0, 0.4)";><font size=4px color="white">This Year</font></a></li>
+        <li><a href="resources.html" style="background-color:rgba(0, 0, 0, 0.4)";><font size=4px color="white">Resources</font></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <h2><p>5,300+</p></h2>
+        <p>Colleges in the US</p><br><br>
+        <hr>
+      <h2><p>1,800+</p></h2>
+      <p>College Majors</p><br><br>
+      <hr>
+      <h2><p>1</p></h2>
+      <p> Right Path for You </p>
+
+    </div>
+    <div class="col-sm-8 text-left">
+      <h1><center><img src="https://i.imgur.com/ULqed6B.png"><center></h1>
+      <p>Welcome to Plan My Path.</p>
+      <hr>
+      <h3>Test</h3>
+      <p>Lorem ipsum...</p>
+      <br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p><a target="_blank" href="https://collegesofdistinction.com/advice/beginning-your-future-career-plan-for-high-school-students-4-easy-steps/"><img src="https://i.imgur.com/DQwPpGl.jpg" width=175px></a>  <h4>Career Planning Tips<h4></p>
+      </div>
+      <br><br>
+      <div class="well">
+        <p><a target="_blank" href="https://www.topresume.com/career-advice/how-to-figure-out-what-you-want-to-be-when-you-grow-up"><img src="https://cdn.pixabay.com/photo/2016/11/29/09/32/concept-1868728_960_720.jpg" width=175px></a>  <h4>What Should You Be When You Grow Up?<h4></p>
+      </div>
+      <br><br>
+    </div>
+  </div>
+</div>
+</font>
+
+<footer class="container-fluid text-center">
+  <p></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet'>
+  <title>Plan My Path</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Yeseva+One' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+
+  <style>
+
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      padding: 20px;
+      font-family: "Arvo";
+      border-radius: 0;
+      background-image: url("https://cdn.pixabay.com/photo/2016/03/09/09/14/books-1245690_960_720.jpg");
+
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-image: url("https://i.imgur.com/IGZrVK1.png");
+      background-position: 50% 0;
+      height: 200%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #68a9fd;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+    .navbar-brand {
+      background-color: #4e9afd !important;
+      color: white !important;
+      font-family: "Yeseva One" !important;
+    }
+#container {
+  background: rgb(126,190,254);
+  background: linear-gradient(90deg, rgba(126,190,254,1) 0%, rgba(138,192,246,1) 37%, rgba(205,230,255,1) 100%);
+    color: "white";
+    border-radius: 25px;
+    width:450px;
+    margin: 50px auto auto auto;
+    padding-bottom:100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#formContainer {
+    padding-top:12px
+}
+#taskIOSection {
+}
+#taskInput {
+
+    font-size:14px;
+    font-family:'Arvo';
+    height:36px;
+    width:311px;
+    border-radius:100px;
+    background-color:white;
+    border:0;
+    color:"black";
+    display:block;
+    padding-left:15px;
+   -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+}
+#taskInput:focus{
+  box-shadow: 0px 0px 1pt 1pt #b4d4fe;
+ background-color:#e6eeff;
+  outline:none;
+}
+::-webkit-input-placeholder {
+    color: "black";
+    font-style:italic;
+    /* padding-left:10px; */
+}
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: "black";
+    font-style:italic;
+}
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: "black";
+    font-style:italic;
+}
+:-ms-input-placeholder {
+    color: "black";
+    font-style:italic;
+}
+#taskhead {
+    margin-top:0;
+    width:440px;
+    height:48px;
+    padding-left:12px;
+}
+header h1 {
+    font-size:25px;
+    font-weight:300;
+    color:"black";
+    font-weight: 900;
+    text-shadow: 0 0 10px white;
+    line-height:48px;
+  width:50%;
+  padding: 10px;
+  display:inline;
+}
+header a{
+
+  width:40%;
+  display:inline;
+  line-height:48px;
+}
+#taskEntryForm {
+  background: rgb(126,190,254);
+  background: linear-gradient(90deg, rgba(126,190,254,1) 0%, rgba(138,192,246,1) 37%, rgba(205,230,255,1) 100%);
+    border-width:0px;
+    padding: 0px 12px 0px 12px;
+    font-size:0px;
+}
+#taskList {
+    width: 440px;
+    margin:auto;
+    font-size:19px;
+    font-weight:600;
+}
+
+#clear {
+  padding-left:200px;
+  color: red;
+}
+
+#instructions {
+  text-align: center;
+}
+#instTitle {
+  font-weight: 900 !important;
+}
+  </style>
+</head>
+
+<body>
+<font face=Arvo>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-brand"><font size=5px><i><b>Plan My Path</b></i></font></div>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="home" style="background-color:rgba(0, 0, 0, 0.4);"><font color="white" size=4px>Home</font></a></li>
+        <li><a href="month" style="background-color:rgba(0, 0, 0, 0.4)";><font size=4px color="white">Planner</font></a></li>
+        <li><a href="timeline" style="background-color:rgba(0, 0, 0, 0.4)";><font size=4px color="white">Timeline</font></a></li>
+        <li><a href="news" style="background-color:rgba(0, 0, 0, 0.4)";><font size=4px color="white">News</font></a></li>
+        <li><a href="resources" style="background-color:rgba(0, 0, 0, 0.4)";><font size=4px color="white">Resources</font></a></li>
+        <li><a href="about" style="background-color:rgba(0, 0, 0, 0.4)";><font size=4px color="white">About</font></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <h2><p>5,300+</p></h2>
+        <p>Colleges in the US</p><br><br>
+        <hr>
+      <h2><p>1,800+</p></h2>
+      <p>College Majors</p><br><br>
+      <hr>
+      <h2><p>1</p></h2>
+      <p> Right Path for You </p>
+
+    </div>
+    <div class="col-sm-8 text-left">
+      <h1><center><img src="https://i.imgur.com/ULqed6B.png"><center></h1>
+        <center><h3> What are your goals for this month? </h3></center>
+
+
+
+    <div id="container">
+    <header id="taskhead">
+         <h1>This Month</h1>
+      <a href="#" id="clear">
+        Clear all</a>
+
+    </header>
+    <section id="taskIOSection">
+        <div id="formContainer">
+            <form id="taskEntryForm">
+                <input id="taskInput" placeholder="ex: Take the December SAT" />
+            </form>
+        </div>
+        <ul id="taskList"></ul>
+    </section>
+</div>
+
+<br>
+<div id=instructions>
+  <div id=instTitle>Instructions:</div>  Type in a task and press enter to submit it. To remove a task, click on it. To remove all tasks, click "remove all" and then refresh the page.
+</div>
+      <br><br><br>
+    </div>
+    <div class="col-sm-2 sidenav">
+      
+    </div>
+  </div>
+</div>
+</font>
+
+<footer class="container-fluid text-center">
+  <p></p>
+</footer>
+
+
+<script>
+$(document).ready(function () {
+    var i = 0;
+    for (i = 0; i < localStorage.length; i++) {
+        var taskID = "task-" + i;
+        $('#taskList').append("<li id='" + taskID + "'>" + localStorage.getItem(taskID) + "</li>");
+    }
+    $('#clear').click(function () {
+        localStorage.clear();
+    });
+    $('#taskEntryForm').submit(function () {
+        if ($('#taskInput').val() !== "") {
+            var taskID = "task-" + i;
+            var taskMessage = $('#taskInput').val();
+            localStorage.setItem(taskID, taskMessage);
+            $('#taskList').append("<li class='task' id='" + taskID + "'>" + taskMessage + "</li>");
+            var task = $('#' + taskID);
+            task.css('display', 'none');
+            task.slideDown();
+            $('#taskInput').val("");
+            i++;
+        }
+        return false;
+    });
+
+    $('#taskList').on("click", "li", function (event) {
+        self = $(this);
+        taskID = self.attr('id');
+        localStorage.removeItem(taskID);
+        self.slideUp('slow', function () {
+            self.remove();
+        });
+
+    });
+
+
+});
+</script>

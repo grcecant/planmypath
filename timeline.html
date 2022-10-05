@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet'>
+  <title>Plan My Path</title>
+  <meta charset="utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Yeseva+One' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      padding: 20px;
+      font-family: "Arvo";
+      border-radius: 0;
+      background-image: url("https://cdn.pixabay.com/photo/2016/03/09/09/14/books-1245690_960_720.jpg");
+
+    }
+
+    .navbar-brand {
+      background-color: #4e9afd !important;
+      color: white !important;
+      font-family: "Yeseva One" !important;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-image: url("https://i.imgur.com/IGZrVK1.png");
+      background-position: 50% 0;
+      height: 320%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #68a9fd;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+    .navbar-brand {
+      background-color: #4e9afd !important;
+      color: white !important;
+
+    }
+
+    #arrow {
+      background-repeat: no-repeat;
+      background-position: center 250px;
+      background-size: 370px;
+
+    }
+
+    #freshman {
+      padding-right: 500px;
+    }
+
+    #sophomore {
+      padding-left: 500px;
+    }
+
+    #junior {
+      padding-right: 500px;
+    }
+
+    #senior {
+      padding-left: 530px;
+    }
+  </style>
+</head>
+<body>
+<font face=Arvo>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-brand"><font size=5px><i><b>Plan My Path</b></i></font></div>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="home" style="background-color:rgba(0, 0, 0, 0.4);"><font color="white" size=4px>Home</font></a></li>
+        <li><a href="month" style="background-color:rgba(0, 0, 0, 0.4)";><font size=4px color="white">Planner</font></a></li>
+        <li><a href="timeline" style="background-color:rgba(0, 0, 0, 0.4)";><font size=4px color="white">Timeline</font></a></li>
+        <li><a href="news" style="background-color:rgba(0, 0, 0, 0.4)";><font size=4px color="white">News</font></a></li>
+        <li><a href="resources" style="background-color:rgba(0, 0, 0, 0.4)";><font size=4px color="white">Resources</font></a></li>
+        <li><a href="about" style="background-color:rgba(0, 0, 0, 0.4)";><font size=4px color="white">About</font></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <h2><p>5,300+</p></h2>
+        <p>Colleges in the US</p><br><br>
+        <hr>
+      <h2><p>1,800+</p></h2>
+      <p>College Majors</p><br><br>
+      <hr>
+      <h2><p>1</p></h2>
+      <p> Right Path for You </p>
+
+    </div>
+    <div class="col-sm-8 text-left">
+      <div id=arrow style="background-image: url('https://i.imgur.com/D7TK1fC.jpg');">
+      <h1><center><img src="https://i.imgur.com/ULqed6B.png"><center></h1>
+      <center><i><h2>High School Timeline</h2></i></center>
+
+      <br><br><br>
+      <div id="freshman">
+        <p><font color=#0080ff size=5px>Freshman year</font> is the time to familiarize yourself with your school and its course offerings. Check out which APs your school offers, and which ones interest you.</p>
+        <p> Get to know your guidance counselor, they'll be very helpful for the rest of your time in school.</p>
+      </div>
+
+      <div id="sophomore">
+        <p><font color=#0080ff size=5px>Sophomore year</font> is the perfect time for creative exploration.
+          By now, you will have become familiarized with your school and its inner workings, leaving an amazing opportunity to explore new passions.
+        Join that new club that sounds interesting! Try a sport you think you might be good at!</p>
+        <p> Consider taking the PSAT. It can also be taken junior year, but taking it once Sophomore year can serve as good practice.</p>
+        <p> Continue focusing on schoolwork and maintaining good relationships with your teachers. Keep up the great work!</p>
+
+      </div>
+
+      <div id="junior">
+        <p><font color=#0080ff size=5px>Junior year</font> is when you need to start constructing your score portfolio.
+          This is the year when you will sit for the SAT or ACT, as well as the year where you would take SAT subject tests.
+        <p> You will need 2 teacher recommendations when applying to college, and many colleges prefer that those teachers be from Junior or Senior year.
+          Forge good relationships with your teachers!
+        </p>
+        <p>
+          This is the year to go on college tours. Take advantage of school breaks and check out schools you would be potentially interested in applying to.
+        </p>
+        <p>
+          Try to challenge yourself with more difficult courses! This may include AP courses, IB courses, or honors courses.
+        </p>
+      </div>
+
+      <div id="senior">
+        <p><font color=#0080ff size=5px>Senior year</font> is when you will apply to college. Early decision and early action
+          applications are typically due in early November, while regular decision applications are due in the beginning of January.</p>
+        <p>
+          While applying, remember to stay on top of all deadlines. Remind your teachers what colleges you are applying to and when those deadlines
+          are so they can submit your recommendations on time.
+        </p>
+        <p>
+          College decisions are typically released for regular decision in early April or late March.
+          Once decisions come out, there are only two things left to do: graduate, and celebrate!
+        </p>
+
+
+      </div>
+
+      <br>
+      <center><font color=#0080ff size=7px>Graduation!</font></center>
+
+
+    </div>
+    </div>
+    <div class="col-sm-2 sidenav">
+      
+    </div>
+  </div>
+</div>
+</font>
+
+<footer class="container-fluid text-center">
+  <p><font size=1px>Created my free logo at LogoMakr.com</font></p>
+</footer>
+
+</body>
+</html>
